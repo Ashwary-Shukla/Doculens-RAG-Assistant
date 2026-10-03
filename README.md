@@ -10,7 +10,7 @@
 
 ## 🚀 Live Demo & Visuals
 
-- **Live App:** [Streamlit Community Cloud Demo](https://your-app-url.streamlit.app/) *(Deploy via Streamlit Cloud and link here)*
+- **Live App:** https://doculens-rag-assistant-c7cp47yxbj6deykx5uc5ww.streamlit.app/
 - **Demo GIF / Screenshot:** Add your recorded GIF or screenshot into `demo/preview.png`.
 
 ![DocuLens Preview](demo/preview.png)
