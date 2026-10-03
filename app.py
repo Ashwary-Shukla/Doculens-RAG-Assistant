@@ -143,7 +143,8 @@ def process_pdf(file_bytes):
             )
 
         progress.info(
-            f"📄 Loaded {len(docs)} page(s). Splitting document..."
+            f"📄 Loaded {len(docs)} page(s). "
+            "Splitting document..."
         )
 
         # -------------------------------------------------
@@ -185,7 +186,8 @@ def process_pdf(file_bytes):
             chunks = chunks[:MAX_CHUNKS]
 
         progress.info(
-            f"🧠 Creating embeddings for {len(chunks)} chunks..."
+            f"🧠 Creating embeddings for "
+            f"{len(chunks)} chunks..."
         )
 
         # -------------------------------------------------
@@ -219,7 +221,6 @@ def process_pdf(file_bytes):
         # -------------------------------------------------
 
         if os.path.exists(tmp_path):
-
             os.remove(tmp_path)
 
 
@@ -292,8 +293,7 @@ Context:
         # -------------------------------------------------
 
         llm = ChatGoogleGenerativeAI(
-            model="gemini-2.5-flash",
-            temperature=0,
+            model="gemini-3.8-flash",
         )
 
         # -------------------------------------------------
@@ -319,7 +319,6 @@ Context:
         # -------------------------------------------------
 
         if "messages" not in st.session_state:
-
             st.session_state.messages = []
 
         # Display previous messages
@@ -349,7 +348,6 @@ Context:
             # -------------------------------------------------
 
             with st.chat_message("user"):
-
                 st.markdown(query)
 
             st.session_state.messages.append(
