@@ -27,16 +27,6 @@
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Framework / UI:** [Streamlit](https://streamlit.io/)
-- **Orchestration:** [LangChain](https://python.langchain.com/)
-- **Embeddings:** OpenAI `text-embedding-3-small`
-- **LLM Engine:** OpenAI `gpt-4o-mini`
-- **Vector Database:** [ChromaDB](https://www.trychroma.com/)
-- **PDF Parser:** PyPDF
-
----
 
 ## ⚡ Local Setup Instructions
 
